@@ -15,12 +15,12 @@ import numpy as np
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-obama_image = face_recognition.load_image_file("ravi.jpg")
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
+ravi_image = face_recognition.load_image_file("ravi.jpg")
+ravi_face_encoding = face_recognition.face_encodings(ravi_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-biden_image = face_recognition.load_image_file("swathi.jpg")
-biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
+swathi_image = face_recognition.load_image_file("swathi.jpg")
+swathi_face_encoding = face_recognition.face_encodings(swathi_image)[0]
 
 ramu_image = face_recognition.load_image_file("ramu.jpg")
 ramu_face_encoding = face_recognition.face_encodings(ramu_image)[0]
@@ -31,8 +31,8 @@ ram_face_encoding = face_recognition.face_encodings(ram_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    obama_face_encoding,
-    biden_face_encoding,
+    ravi_face_encoding,
+    swathi_face_encoding,
     ramu_face_encoding,ram_face_encoding
 ]
 known_face_names = [
